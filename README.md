@@ -21,6 +21,12 @@ from datasets import load_dataset
 fw = load_dataset("xiang709/REOBench", streaming=True)
 ```
 
+## Evaluation
+- We use mmdetection and mmsegmentation for detection and segmeantation experiments. Please check their official repos for evaluation details.
+
+- We provide evaluation code for evaluating vision-langauge models. Check VRSBench folder for details. Codes are adapted from [VRSBench](https://github.com/lx709/VRSBench).
+
+
 ## Licensing Information
 The dataset is released under the [CC-BY-4.0]([https://creativecommons.org/licenses/by-nc/4.0/deed.en](https://creativecommons.org/licenses/by/4.0/deed.en)), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
 
@@ -41,4 +47,6 @@ The dataset is released under the [CC-BY-4.0]([https://creativecommons.org/licen
 
 ## 🙏 Acknowledgement
 Our REOBench dataset is built based on [AID](https://captain-whu.github.io/DOTA/dataset.html), [DIOR](https://gcheng-nwpu.github.io/#Datasets), and [VRSBench](https://github.com/lx709/VRSBench) datasets.
+
+We use [mmdetection](https://github.com/open-mmlab/mmdetection) and [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) for in our experiments.
 
