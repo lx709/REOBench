@@ -7,7 +7,13 @@ Xiang Li, Yong Tao, Siyuan Zhang, Siwei Liu, Zhitong Xiong, Chunbo Luo, Lu Liu, 
 
 
 # REOBench
+
+<center>
+    <img src="fig_dataset.png" alt="Example of perturbed images. In the first row, we present the original clean image alongside images perturbed by five levels of motion blur. The second and third rows illustrate examples of images corrupted by a range of perturbation types.">
+</center>
+
 We introduce REOBench, a comprehensive Benchmark designed to evaluate the Robustness of Earth Observation Foundation Models. Our benchmark systematically evaluates the robustness of extensive prevalent foundation models, covering state-of-the-art models based on masked image modeling, contrastive learning, and large language models. REOBench focuses on high-resolution optical remote sensing images, which are widely used in real-world applications such as urban planning and disaster response. We conducted experiments on six widely studied remote sensing image understanding tasks, covering both vision-centric and vision-language tasks, under twelve types of perturbations. These include both appearance-based corruptions (e.g., noise, blur, haze) and geometric distortions (e.g., rotation, scale, translation), applied at varying severity levels to simulate realistic environmental and sensor-induced challenges. 
+
 
 ## 🗓️ TODO
 - [x] **[2025.05.15]** We release the REOBench, a Benchmark for Evaluating the Robustness of Earth Observation Foundation Models.
