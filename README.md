@@ -21,9 +21,13 @@ from datasets import load_dataset
 fw = load_dataset("xiang709/REOBench", streaming=True)
 ```
 
-## Evaluation
-- We use mmdetection and mmsegmentation for detection and segmeantation experiments. Please check their official repos for evaluation details.
+## Segmentation
+We use mmsegmentation for semantic segmeantation experiments. Please check ```Segmenation``` folder for details.
 
+## Detection
+We use mmrorate for object detection experiments. Please check ```Detection``` folder for details.
+
+## Caption, VQA, Visual Grounding
 - We provide evaluation code for evaluating vision-langauge models. Check VRSBench folder for details. Codes are adapted from [VRSBench](https://github.com/lx709/VRSBench).
 
 
