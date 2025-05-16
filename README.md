@@ -27,15 +27,16 @@ We use mmsegmentation for semantic segmeantation experiments. Please check ```Se
 ## Detection
 We use mmrorate for object detection experiments. Please check ```Detection``` folder for details.
 
-## Caption, VQA, Visual Grounding
-- We provide evaluation code for evaluating vision-langauge models. Check VRSBench folder for details. Codes are adapted from [VRSBench](https://github.com/lx709/VRSBench).
+## Classification
+Please check ```Classification``` folder for details.
 
+## Caption, VQA, Visual Grounding
+We provide evaluation code for evaluating vision-langauge models. Check ```VRSBench``` folder for details. Codes are adapted from [VRSBench](https://github.com/lx709/VRSBench).
 
 ## Licensing Information
 The dataset is released under the [CC-BY-4.0]([https://creativecommons.org/licenses/by-nc/4.0/deed.en](https://creativecommons.org/licenses/by/4.0/deed.en)), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
 
 ## Related Projects
-- Survey. A comprehensive survey about vision-language models in remote sensing. [RSVLM](https://arxiv.org/pdf/2305.05726.pdf).
 - [VRSBench](https://github.com/lx709/VRSBench). A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding.
 - [CLAIR](https://github.com/DavidMChan/clair). Automatic GPT-based caption evaluation.
 
