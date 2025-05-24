@@ -49,10 +49,14 @@ The dataset is released under the [CC-BY-4.0]([https://creativecommons.org/licen
 ## 📜 Citation
 
 ```bibtex
-@inproceedings{livrsbench,
-  title={VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding},
-  author={Li, Xiang and Ding, Jian and Elhoseiny, Mohamed},
-  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track}
+@misc{li2025reobenchbenchmarkingrobustnessearth,
+      title={REOBench: Benchmarking Robustness of Earth Observation Foundation Models}, 
+      author={Xiang Li and Yong Tao and Siyuan Zhang and Siwei Liu and Zhitong Xiong and Chunbo Luo and Lu Liu and Mykola Pechenizkiy and Xiao Xiang Zhu and Tianjin Huang},
+      year={2025},
+      eprint={2505.16793},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.16793}, 
 }
 ```
 
