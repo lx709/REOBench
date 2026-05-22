@@ -1,0 +1,50 @@
+# 基础镜像
+FROM nvcr.io/nvidia/pytorch:23.06-py3
+
+# 使用 bash
+SHELL ["/bin/bash", "-c"]
+
+
+# -------------------------------
+# 安装 mmcv（与你手工安装完全一致）
+# -------------------------------
+RUN pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
+
+# -------------------------------
+# 卸载不兼容 opencv
+# -------------------------------
+RUN pip uninstall -y opencv opencv-python opencv-contrib-python opencv-python-headless || true
+
+# -------------------------------
+# 安装指定版本 opencv
+# -------------------------------
+RUN pip install opencv-python==4.6.0.66
+
+# -------------------------------
+# 安装 numpy / openmim
+# -------------------------------
+RUN pip install "numpy==1.22.2"
+RUN pip install -U openmim "numpy==1.22.2"
+
+# -------------------------------
+# 安装辅助工具
+# -------------------------------
+RUN pip install ftfy regex --no-deps
+
+# -------------------------------
+# 复制你的 mmsegmentation 源代码
+# -------------------------------
+COPY . /workspace
+
+# 设置工作目录
+WORKDIR /workspace
+
+# -------------------------------
+# editable 安装（你必须要这个）
+# -------------------------------
+RUN pip install -v -e .
+
+# -------------------------------
+# 默认交互 shell
+# -------------------------------
+CMD ["bash"]

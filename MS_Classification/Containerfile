@@ -1,0 +1,24 @@
+FROM nvcr.io/nvidia/pytorch:23.06-py3
+
+SHELL ["/bin/bash", "-c"]
+
+RUN pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
+
+RUN pip uninstall -y opencv opencv-python opencv-contrib-python opencv-python-headless || true
+
+RUN pip install opencv-python==4.6.0.66
+
+RUN pip install "numpy==1.22.2"
+RUN pip install -U openmim "numpy==1.22.2"
+
+RUN pip install ftfy regex --no-deps
+
+COPY . /workspace
+
+WORKDIR /workspace
+
+RUN mim install -e .
+
+RUN pip install timm tifffile
+
+CMD ["bash"]

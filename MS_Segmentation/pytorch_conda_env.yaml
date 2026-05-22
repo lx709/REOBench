@@ -1,0 +1,8 @@
+name: mmseg3
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - pytorch=2.7.1
+  - torchvision
